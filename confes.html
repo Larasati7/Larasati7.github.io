@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For You &#129505</title>
+</head>
+<body style="background-color: #1C2529; color: #eaeaea;">
+     <!-- confess start -->
+ <div id="confes">
+    <div>
+    <img src="https://media.tenor.com/nSYuBMLsck8AAAAi/cute.gif" alt="Ayang Pelin" style="height: 280px" />
+    <h1>Hai Pelin</h1>
+    <h2>Mau gak jadi Pendamping apid selamanya?</h2>
+    <div>
+      <button onclick="mau()">MAU</button>
+      <button onmouseover="gak(this)">GAK</button>
+    </div>
+</div>
+</div>
+    <script>
+        // let poin = 0
+        function mau() {
+          alert("makacii mw nerima akuu<3");
+          alert("Kirim jawabannya ke WA aku ya");
+  
+          location.assign("https://wa.me/6288297520098?text=Iyaa+apid+akuu+mw");
+        }
+        function gak(ini) {
+          ini.style.position = "absolute";
+          ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+          ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+          poin = poin + 1
+          // if (poin==5) {
+          //   ini.style.display = "none"
+          // }
+        }
+      </script>
+    <!-- confess end -->
+    <script src="snowstorm.js"></script>
+
+</body>
+</html>

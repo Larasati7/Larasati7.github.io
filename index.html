@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      div {width: 120px; margin: auto; display: flex; justify-content: space-between;}
-    </style>
-    <title>Just For You &#129505</title>
-  </head>
-  <body style="text-align: center">
-    <img src="https://media.tenor.com/nSYuBMLsck8AAAAi/cute.gif" alt="Ayang Pelin" style="height: 280px" />
-    <h1>Hai Pelin</h1>
-    <h2>Mau gak jadi Pendamping apid selamanya?</h2>
-    <div>
-      <button onclick="mau()">MAU</button>
-      <button onmouseover="gak(this)">GAK</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown to new year 2022</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="countdown">fda</h1>
     </div>
-    <script>
-      function mau() {
-        alert("makacii mw nerima akuu<3");
-        alert("Kirim jawabannya ke WA aku ya");
-
-        location.assign("https://wa.me/6288297520098?text=Iyaa+apid+akuu+mw");
-      }
-      function gak(ini) {
-        ini.style.position = "absolute";
-        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
-        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
-      }
-    </script>
-  </body>
+    <div class="timer">
+        <div class="countdown-container">
+            <div class="time day">100</div>
+            <span class="text">Days</span>
+        </div>
+        <div class="countdown-container">
+            <div class="time hour">100</div>
+            <span class="text">Hours</span>
+        </div>
+        <div class="countdown-container">
+            <div class="time minute">100</div>
+            <span class="text">Minutes</span>
+        </div>
+        <div class="countdown-container">
+            <div class="time seconds">10</div>
+            <span class="text">Seconds</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="snowstorm.js"></script>
+</body>
 </html>
